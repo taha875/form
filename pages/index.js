@@ -1,6 +1,6 @@
 import React from "react";
-import Form from "../components/form";
-import Nav from "../components/nav";
+import Form from "../components/form/form";
+import Nav from "../components/nav/Nav";
 function index() {
   return (
     <>

@@ -1,7 +1,7 @@
-import React, { useEffect,useState } from "react";
+import React from "react";
 import Router from "next/router";
-function nav() {
-  const [active, setActive] = useState(false);
+import Link from "next/link";
+function Nav() {
   // funtion to clear local storage
   function clearLocalStorage() {
     localStorage.clear();
@@ -14,14 +14,14 @@ function nav() {
     <>
       <div className="bg-black py-3 w-full flex items-center justify-center relative z-20">
         <ul className="gap-x-6 text-white text-base flex items-center justify-center">
-          <a href="/">
+          <Link href="/">
             {" "}
             <li className="cursor-pointer">Form</li>
-          </a>
+          </Link>
 
-          <a href="/user">
+          <Link href="/user">
             <li className="cursor-pointer">User</li>
-          </a>
+          </Link>
 
           <li onClick={() => clearLocalStorage()} className="cursor-pointer">
             Clear Local Storage
@@ -32,4 +32,4 @@ function nav() {
   );
 }
 
-export default nav;
+export default Nav;

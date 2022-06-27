@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import Router from "next/router";
 function nav() {
-  const [active, setActive] = React.useState(false);
+  const [active, setActive] = useState(false);
   // funtion to clear local storage
   function clearLocalStorage() {
     localStorage.clear();

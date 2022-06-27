@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function user() {
+function User() {
   const [user, setUser] = useState([]);
   useEffect(() => {
     let data = localStorage.getItem("formData");
@@ -44,4 +44,4 @@ function user() {
   );
 }
 
-export default user;
+export default User;
